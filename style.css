@@ -1,0 +1,338 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+
+  /* ESTILO GERAL */
+
+  * {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove padding padrão de todos os elementos */
+    box-sizing: border-box; /* Faz com que largura e altura incluam padding e bordas */
+    font-family: "Oxanium", sans-serif; /* Define a fonte padrão para todo o site */
+  }
+
+  body {
+    background-color: #273980; /* Cor de fundo do corpo da página */
+    height: 100vh; /* Altura do corpo igual à altura da janela de visualização */
+  }
+
+  .interface { 
+    max-width: 1280px; /* Largura máxima da interface */
+    margin: 0 auto; /* Centraliza a interface horizontalmente */
+  }
+
+  .flex {
+    display: flex; /* Aplica o layout flexível */
+  }
+
+  .btn-contato button { 
+    padding: 10px 40px; /* Espaçamento interno do botão */
+    font-size: 14px; /* Tamanho da fonte do botão */
+    font-weight: 500; /* Peso da fonte do botão */
+    background-color: #f83a26; /* Cor de fundo do botão */
+    border: 0; /* Remove bordas do botão */
+    border-radius: 30px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Indica que é clicável */
+    transition: .2s; /* Efeito de transição suave para propriedades */
+    margin-top: 0px; /* Margem superior do botão */
+    color: #fff; /* Cor do texto do botão */
+  }
+
+  h2.titulo {
+    color: #fea919; /* Cor do texto do título */
+    font-size: 30px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto do título */
+  }
+
+  .linha {
+    margin-top: -30px; /* Ajusta a margem superior */
+    background-color: #f83a26; /* Cor de fundo da linha */
+    box-shadow: 0 0 40px 10px #216cd6; /* Sombra ao redor da linha */
+  }
+
+
+  /* ESTILO DO CABEÇALHO */
+
+  header {
+    padding: 40px 4%; /* Espaçamento interno do cabeçalho */
+  }
+
+  header > .interface {
+    display: flex; /* Layout flexível para a interface do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça itens entre si */
+  }
+
+  header a {   
+    color: #e7e3dd; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: inline-block; /* Permite aplicar padding e margin nos links */
+    transition: .2s; /* Efeito de transição suave para propriedades */
+  }
+
+  header a:hover {
+    color: #fea919; /* Cor do link ao passar o mouse */
+    transform: scale(1.15); /* Aumenta o tamanho do link ao passar o mouse */
+  }
+
+  header nav ul {
+    list-style-type: none; /* Remove marcadores da lista */
+  }
+
+  header nav ul li {
+    display: inline-block; /* Exibe itens da lista em linha */
+    padding: 0 40px; /* Espaçamento interno horizontal dos itens da lista */
+  }
+
+  /* Seleciona a imagem dentro da classe .logo */
+  .logo img {
+    width: 200px; /* Largura da imagem do logo */
+    height: auto; /* Mantém proporções da imagem */
+    max-width: 100%; /* Impede que a imagem ultrapasse o contêiner */
+    margin-top: -20px; /* Ajusta a margem superior da imagem */
+  }
+
+  .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #979edd; /* Sombra ao redor do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+  }
+
+
+  /* ESTILO DO TOPO DO SITE */
+  section.topo-do-site {
+    padding: 40px 4%; /* Espaçamento interno da seção do topo do site */
+  }
+
+  section.topo-do-site .flex {
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça itens entre si */
+    gap: 40px; /* Espaço entre os itens flexíveis */
+  }
+
+  .topo-do-site h1 {
+    color: #fea919; /* Cor do título principal */
+    font-size: 75px; /* Tamanho da fonte do título */
+    line-height: 60px; /* Altura da linha do título */
+    margin-top: 100px; /* Margem superior do título */
+  }
+
+  .topo-do-site h1 span {
+    color: #fff; /* Cor do texto dentro da tag span do título */
+    font-size: 60px; /* Tamanho da fonte do texto dentro da tag span */
+  }
+
+  .topo-do-site .img-topo-site {
+    width: center; /* Ajuste de largura conforme necessário */
+    max-width: 100%; /* Impede que a imagem ultrapasse o contêiner */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+  }
+
+  /* ESTILO DAS CONECTADOS */
+
+  section.conectados {
+      padding: 40px 4%;
+      margin-top: 80px;
+  }
+
+  section.conectados .flex {
+      gap: 50px;
+  }
+
+  .conectados .conectados-box {
+      color: #fff;
+      padding: 40px;
+      transition: .2s;
+      border-radius: 20px;
+      margin-top: 45px;
+      border: 2px solid #216cd6;
+  }
+
+  .conectados .conectados-box i {
+      font-size: 50px;
+      color: #fea919;
+  }
+
+  .conectados .conectados-box h3 {
+      font-size: 20px;
+      margin: 15px 0;
+  }
+
+
+  .conectados .conectados-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #fff;
+  }
+
+  /* ESTILO TECNOLOGIAS */
+
+  section.tecnologias {
+    padding: 40px 4%; /* Espaçamento interno da seção Tecnologias */
+    margin-top: 80px; /* Margem superior da seção */
+  }
+
+  section.tecnologias .flex {
+    gap: 50px; /* Espaço entre os itens flexíveis */
+  }
+
+  .tecnologias .tecnologias-box {
+    color: #fff; /* Cor do texto dentro das caixas */
+    padding: 40px; /* Espaçamento interno das caixas */
+    transition: .2s; /* Efeito de transição suave para propriedades */
+    border-radius: 20px; /* Bordas arredondadas das caixas */
+    margin-top: 45px; /* Margem superior das caixas */
+    border: 2px solid #216cd6; /* Borda das caixas */
+  }
+
+  .tecnologias .tecnologias-box i {
+    font-size: 50px; /* Tamanho do ícone dentro das caixas */
+    color: #fea919; /* Cor do ícone */
+  }
+
+  .tecnologias .tecnologias-box h3 {
+    font-size: 20px; /* Tamanho da fonte do subtítulo */
+    margin: 15px 0; /* Margem vertical do subtítulo */
+  }
+
+  .tecnologias .tecnologias-box:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da caixa ao passar o mouse */
+    box-shadow: 0 0 20px #fff; /* Sombra ao redor da caixa ao passar o mouse */
+  }
+
+
+
+
+
+  /* ESTILO ZON */
+
+
+  section.zon {
+    padding: 40px 4%;
+  }
+
+  section.zon.flex {
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Ajuste o espaçamento entre os itens */
+  }
+
+  .zon h1 {
+    color: #fea919;
+    font-size: 75px;
+    line-height: 60px;
+    margin-top: 100px;
+  }
+
+  .zon h1 span {
+    color: #fff;
+    font-size: 60px;
+  }
+  .btn-zon {
+    display: inline-block;       /* Permite adicionar padding e margin */
+    padding: 10px 20px;         /* Espaçamento interno */
+    background-color: #f83b26c4;  /* Cor de fundo do botão */
+    border: none;                /* Sem borda */
+    border-radius: 5px;         /* Bordas arredondadas */
+    text-align: center;          /* Centraliza o texto */
+    text-decoration: none;       /* Remove o sublinhado do texto */
+    font-size: 18px;             /* Tamanho da fonte */
+    cursor: pointer;             /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+  }
+
+  /* Efeito de hover */
+  .btn-zon:hover {
+    background-color: #fea919;  /* Cor de fundo ao passar o mouse */
+  }
+
+
+  button {
+    background: none; /* Remove o fundo padrão */
+    border: none; /* Remove a borda padrão */
+    padding: 0; /* Remove o padding padrão */
+    color: #fff;
+  }
+
+  /* Adicionando estilos responsivos */
+
+/* Para telas pequenas, como celulares */
+@media (max-width: 768px) {
+  header > .interface {
+    flex-direction: column; /* Muda a direção do layout para coluna */
+    align-items: flex-start; /* Alinha itens no início */
+  }
+
+  .logo img {
+    width: 150px; /* Reduz a largura do logo */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Muda a direção do menu para coluna */
+    padding: 10px 0; /* Adiciona padding ao menu */
+  }
+
+  header nav ul li {
+    padding: 10px 0; /* Adiciona padding vertical aos itens do menu */
+  }
+
+  .topo-do-site h1 {
+    font-size: 50px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .topo-do-site .img-topo-site {
+    display: none; /* Esconde a imagem no topo em telas pequenas */
+  }
+
+  .conectados .flex, 
+  .tecnologias .flex,
+  section.zon .flex {
+    flex-direction: column; /* Muda a direção dos itens flexíveis para coluna */
+    align-items: center; /* Centraliza itens */
+  }
+
+  .conectados .conectados-box,
+  .tecnologias .tecnologias-box {
+    width: 100%; /* Define a largura das caixas para 100% */
+    margin: 10px 0; /* Adiciona margem vertical entre as caixas */
+  }
+
+  .btn-contato button,
+  .btn-zon button {
+    width: 100%; /* Botões ocupam a largura total em telas pequenas */
+    margin-top: 10px; /* Adiciona margem superior aos botões */
+  }
+}
+
+/* Para telas médias, como tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header > .interface {
+    flex-direction: column; /* Muda a direção do layout para coluna em telas médias */
+    align-items: center; /* Centraliza itens */
+  }
+
+  .topo-do-site h1 {
+    font-size: 60px; /* Ajusta o tamanho da fonte do título */
+  }
+
+  .topo-do-site .img-topo-site {
+    width: 80%; /* Ajusta a largura da imagem */
+  }
+
+  .conectados .flex, 
+  .tecnologias .flex,
+  section.zon .flex {
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço */
+    justify-content: center; /* Centraliza itens */
+  }
+
+  .conectados .conectados-box,
+  .tecnologias .tecnologias-box {
+    width: 45%; /* Ajusta a largura das caixas para caberem duas por linha */
+    margin: 20px; /* Adiciona margem em torno das caixas */
+  }
+
+  .btn-contato button,
+  .btn-zon button {
+    width: auto; /* Botões não ocupam a largura total em telas médias */
+  }
+}
+
+
+
